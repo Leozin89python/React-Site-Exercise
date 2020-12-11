@@ -1,0 +1,196 @@
+
+.App {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    display:flex;
+    flex-direction: column;
+  }
+  .App header {
+    background: linear-gradient(96deg, gold 45%, yellow 55%);
+    margin-top: -1.0em;
+    padding: 0.01em;
+  }
+
+  /*
+ .center,.area1 ,.area2 ,.area3{
+   border: solid 1px black;
+ }
+*/
+
+  .App b {
+    color: gold;
+  }
+  .App h1 {
+    text-shadow: 2px 2px 2px black;
+    padding: 0.1em;
+  }
+  .image1,.image2,.image3,.image4,
+  .image5,.image6,.image7,.image8{
+    animation: anime ease-in 1s alternate infinite;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .image{
+    height: 400px;
+    width: 500px;
+  } 
+  .center{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 1em;
+    height: 25.1em;  
+  }
+ 
+  .App h2{
+    height: 2em;
+    width: 75%;
+    font-size: 1em;
+    margin-top: -0.5em;
+    padding: 0.4em;
+  }
+  .area1{
+    
+  }
+  .area2{
+    margin-left: -85px;
+    margin-top: 7vh;
+  }
+  .area3{
+    animation: anima 1s ease-in; 
+    background-image: image('../Assets/arrow.png');
+  }
+  .App footer{
+    background: linear-gradient(97deg, red 45%, darkred 55%);
+    margin-top: 2.5em;
+    height: 4.1em;
+    display: flex;
+    flex-direction: row;
+  }
+  .top{
+    color: red;
+  }
+  .con{
+    background: linear-gradient(105deg, #00BFFF 45%, #1E90FF 55%);
+    padding:0.3em; 
+  
+    transition-property: color,text-shadow;
+    transition-duration: 2s;
+  }
+  .con:hover{
+  background: linear-gradient(105deg, #B0C4DE 45%, #708090 55%);
+  cursor: pointer;
+  color:red;
+  text-shadow: 1px 1px 1px black;
+  }
+  .fot{
+    margin-left: 25vh;
+    text-shadow: 3px 3px 3px black;
+    transition-property:text-shadow;
+    transition-duration: 1s;
+  }
+  .fot:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+  }
+  .me{
+    margin-left: 5vh;
+
+    transition-property:color,text-shadow;
+    transition-duration: 2s;
+  }
+  .me:hover{
+    color: goldenrod;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+  }
+  .logo1,.logo2,.logo3{
+    height: 70px;
+    width: 100px;
+  }
+  .logo1{
+    margin-left: 20vh;
+  }
+  .logo2{
+    margin-top: 0.5em;
+  }
+  @media screen and (max-device-width:600px){
+  
+    .center{
+      flex-direction:column;
+      justify-content:space-between;
+      align-items: center;
+    }
+    .area2{
+      display: none;
+    }
+    .area3{
+      margin-top: 5em;
+    }
+    .App footer{
+      margin-top: 20em;
+  }
+  .fot{
+    display: none;
+  }
+  .logo2,.logo3{
+    display: none;
+  }
+    .image{
+      height: 120px;
+      width: 200px;
+    }
+
+  }
+  
+  @media screen and (max-device-width:800px){
+  
+    .center{
+      flex-direction:column;
+      justify-content:space-between;
+      align-items: center;
+    }
+    .area2{
+      display: none;
+    }
+    .area3{
+      margin-top: 5em;
+    }
+    .App footer{
+      margin-top: 20em;
+  }
+  .fot{
+    display: none;
+  }
+ 
+    .image{
+      height: 120px;
+      width: 200px;
+    }
+
+  }
+    
+
+
+
+@keyframes anima{
+  
+  0%{
+    transform: translate( 0 );
+  }
+  
+  100%{
+    transform: translate(-60px);
+  }
+  
+}
+@keyframes anime{
+
+  to{
+    transform:translateX(-30px) ;
+  }  
+} 
